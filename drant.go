@@ -157,7 +157,7 @@ func main() {
 						*skipFlag = int(skp)
 					}
 				}
-				fmt.Printf("skipping every %d rants\n", *limitFlag)
+				fmt.Printf("skipping every %d rants\n", *skipFlag)
 			case "rant":
 				if len(c) >= 2 {
 					rnt, err := strconv.ParseInt(c[1], 10, 64)
