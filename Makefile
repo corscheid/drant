@@ -4,7 +4,7 @@ format:
 	gofmt -w drant.go
 
 all:
-	go build -o bin/drant drant.go
+	go build -o bin/drant ./...
 
 install: drant
 	sudo cp bin/drant /usr/local/bin/
